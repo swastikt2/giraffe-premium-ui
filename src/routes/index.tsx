@@ -40,12 +40,16 @@ function GiraffeHome() {
       </header>
 
       <main id="top" className="px-6 md:px-14">
-        <section className="mx-auto max-w-[1440px] pb-16 pt-6 md:pb-24 md:pt-12" aria-labelledby="hero-title">
+        <section className="relative mx-auto max-w-[1440px] pb-16 pt-6 md:pb-24 md:pt-12" aria-labelledby="hero-title">
+          <figure className="pointer-events-none absolute right-0 top-12 hidden w-[clamp(10rem,18vw,17rem)] overflow-hidden rounded-2xl bg-brand-ink/10 shadow-2xl shadow-brand-clay/20 md:block">
+            <img src={heroSculpture} alt="" width={1024} height={1280} className="sculpture-drift aspect-[4/5] w-full object-cover object-center mix-blend-multiply" aria-hidden="true" />
+            <figcaption className="absolute inset-x-0 bottom-0 bg-brand-ink/70 px-4 py-3 text-[10px] uppercase tracking-[0.2em] text-brand-cream backdrop-blur-sm">The Giraffe mark</figcaption>
+          </figure>
           <div className="editorial-rise flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-brand-clay">
             <span className="size-1.5 rounded-full bg-brand-gold" aria-hidden="true" />
             Award-winning creative · Est. 2014 · India
           </div>
-          <h1 id="hero-title" className="editorial-rise mt-7 max-w-[1100px] font-display text-[clamp(2.75rem,9vw,7.5rem)] uppercase leading-[0.9] [animation-delay:80ms]">
+          <h1 id="hero-title" className="editorial-rise mt-7 max-w-[980px] font-display text-[clamp(2.75rem,9vw,7.5rem)] uppercase leading-[0.9] [animation-delay:80ms]">
             Storytelling that<br />
             <em className="font-editorial not-italic text-brand-gold">reaches</em><br />
             <span className="text-brand-clay">across every horizon.</span>
